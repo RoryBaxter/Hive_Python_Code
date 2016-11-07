@@ -1,0 +1,5 @@
+Heating = {"kitchen" : 0, "master bedroom": 0, "guest room 1": 0, "guest room 2": 0, "bathroom" : 0, "lounge": 0, "dinning room": 0, "toilet": 0}
+Lighting = {"kitchen" : 0, "master bedroom": 0, "guest room 1": 0, "guest room 2": 0, "bathroom" : 0, "lounge": 0, "dinning room": 0, "toilet": 0}
+Water = False
+
+Heating[room] = Value
