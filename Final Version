@@ -6,8 +6,8 @@ room = "N/A"
 
 print(Rooms)
 while True:
-    Function = input("Please select a function - Water, Heating or Light")
-    if Function == 'Water':
+    Function = input("\nPlease select a function - Water, Heating or Lighting ").lower()
+    if Function == 'water':
         while True:
             if water == False:
                 status = input("The water is currently off, would you like to turn it on?(Y/N)").upper()
@@ -19,7 +19,7 @@ while True:
                     print("The water has remained off")
                     break
                 else:
-                    print("That is an invalid input")
+                    print("That is an invalid input\n")
             elif water == True:
                 status = input("the water is currently on, would you like to turn it off?(Y/N)").upper()
                 if status == 'Y':
@@ -29,13 +29,13 @@ while True:
                     print("The water has remained on")
                     break
                 else:
-                    print("That is an invalid input")
-    elif Function == 'Heating':
-        room = input("Please input the room you would like to use\n")
+                    print("That is an invalid input\n")
+    elif Function == 'heating':
+        room = input("Please input the room you would like to use ")
         while room not in Rooms:
-            room = input("Please input the room you would like to use\n")
+            room = input("Please input the room you would like to use ")
         while 1:
-            print("The heating is currently at " + str(Heating[room]) + " in the " + str(room))
+            print("\nThe heating is currently at " + str(Heating[room]) + " in the " + str(room))
             try:
                 Value = int(input("Please input what you would like the heating to be in the " + str(room) + "\n"))
                 if Value not in range(0,6):
@@ -46,12 +46,12 @@ while True:
         Heating[room] = Value
 
 
-    elif Function == 'Lighting':
-        room = input("Please input the room you would like to use\n")
+    elif Function == 'lighting':
+        room = input("Please input the room you would like to use ")
         while room not in Rooms:
-            room = input("Please input the room you would like to use\n")
+            room = input("Please input the room you would like to use ")
         while 1:
-            print("The lighting is currently at " + str(Lighting[room]) + " in the " + str(room))
+            print("\nThe lighting is currently at " + str(Lighting[room]) + " in the " + str(room))
             try:
                 Value = int(input("Please input what you would like the lighting to be in the " + str(room) + "\n"))
                 if Value not in range(0,6):
