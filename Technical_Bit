@@ -3,3 +3,4 @@ Lighting = {"kitchen" : 0, "master bedroom": 0, "guest room 1": 0, "guest room 2
 Water = False
 
 Heating[room] = Value
+Lighting[room] = Value
